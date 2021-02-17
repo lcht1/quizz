@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+* {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #757F9A, #D7DDE8);
+    min-height: 100vh;
+    display: flex;
+}
+
+#question {
+    font-size: 19px;
+    color: #000000;
+}
+
+section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 35px;
+    width: 450px;
+    margin: auto;
+    position: absolute;
+    z-index: 99999999;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.418);
+}
+
+.radio {
+    display: inline-flex;
+    overflow: hidden;
+}
+
+.btn {
+    padding: 15px;
+    background: #D7DDE8;
+    border-radius: 4.8px;
+    text-decoration: none;
+    color: black;
+    outline: none;
+    border: #757F9A 1px solid;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background: #757F9A;
+}
+
+input[type='radio']:checked+label {
+    background-color: #757F9A;
+}
+
+.next-btn {
+    padding: 15px;
+    background: #757F9A;
+    border-radius: 4.8px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-top: 20px;
+    outline: none;
+    border: 1px solid;
+    width: 450px;
+}
+
+.next-btn:hover {
+    cursor: pointer;
+    box-shadow: 5px 5px 10px 0 #757F9A;
+    transform: scale(1.02);
+    transform: transform 1000ms;
+    border-color: #757F9A;
+}
+
+.answer-btn {
+    display: grid;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+#res {
+    padding: 20px;
+}
+
+@media screen and (max-width: 800px) {
+    section,
+    .next-btn {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    section,
+    .next-btn {
+        width: 200px;
+    }
+}
+
+@media screen and (min-width: 640px) {
+    section {
+        margin-top: 100px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    section {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-height: 320px) {
+    section {
+        margin-top: 150px;
+    }
+}
