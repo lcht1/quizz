@@ -1,13 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-* {
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
 body {
     background: linear-gradient(to right, #757F9A, #D7DDE8);
     min-height: 100vh;
     display: flex;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
 }
 
 #question {
