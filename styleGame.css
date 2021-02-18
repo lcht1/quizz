@@ -13,11 +13,11 @@ body {
     display: flex;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
+    color: #000000;
 }
 
 #question {
     font-size: 19px;
-    color: #000000;
 }
 
 section {
@@ -44,7 +44,6 @@ section {
     background: #D7DDE8;
     border-radius: 4.8px;
     text-decoration: none;
-    color: black;
     outline: none;
     border: #757F9A 1px solid;
 }
