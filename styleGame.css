@@ -58,7 +58,7 @@ input[type='radio']:checked+label {
 }
 
 .next-btn {
-    padding: 15px;
+    padding: 15px 0px 15px 0px;
     background: #757F9A;
     border-radius: 4.8px;
     text-decoration: none;
